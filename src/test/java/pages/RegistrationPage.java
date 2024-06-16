@@ -34,6 +34,7 @@ public class RegistrationPage {
         return this;
     }
 
+    @Step("Убираем баннер")
     public RegistrationPage removeBanner() {
         executeJavaScript("$('#fixedban').remove()");
         executeJavaScript("$('footer').remove()");
