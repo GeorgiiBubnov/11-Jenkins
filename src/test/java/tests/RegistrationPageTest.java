@@ -11,7 +11,7 @@ public class RegistrationPageTest extends TestBase {
     TestData testData = new TestData();
 
     @Test
-    @Tag("demoqa_test")
+    @Tag("demoqa")
     void fillFormTest() {
         registrationPage.openPage()
                 .removeBanner()
@@ -43,7 +43,7 @@ public class RegistrationPageTest extends TestBase {
     }
 
     @Test
-    @Tag("demoqa_test")
+    @Tag("demoqa")
     void minimalFillFormTest() {
         registrationPage.openPage()
                 .removeBanner()
@@ -63,7 +63,7 @@ public class RegistrationPageTest extends TestBase {
     }
 
     @Test
-    @Tag("demoqa_test")
+    @Tag("demoqa")
     void negativeFillFormTest() {
         registrationPage.openPage()
                 .removeBanner()
