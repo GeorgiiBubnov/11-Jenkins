@@ -123,13 +123,13 @@ public class RegistrationPage {
         return this;
     }
 
-    @Step("Проверяем результат {key} {value}")
+    @Step("Проверяем поле {key} с ведёнными данными {value}")
     public RegistrationPage checkResult(String key, String value) {
         tableComponent.checkTableResult(key, value);
         return this;
     }
 
-    @Step("Проверяем цвет границы поля эддектронной почты красным")
+    @Step("Проверяе, что граница поля электронной почты красного цвета")
     public RegistrationPage verifyEmailFieldIsRed() {
         userEmailInput.shouldHave(Condition.cssValue("border-color", "rgb(220, 53, 69)"));
         return this;
