@@ -43,7 +43,7 @@ public class RegistrationPageTest extends TestBase {
     }
 
     @Test
-    @Tag("demoqa")
+    @Tag("simple")
     void minimalFillFormTest() {
         registrationPage.openPage()
                 .removeBanner()
